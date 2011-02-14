@@ -18,7 +18,9 @@ Blog::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
-  #   resources :products do
+    resources :posts do
+    resources :comments
+    end
   #     member do
   #       get 'short'
   #       post 'toggle'
